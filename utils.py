@@ -2,7 +2,7 @@ import os
 import requests
 
 def get_shopify_products():
-    url = f"{os.getenv('SHOPIFY_STORE_URL')}/admin/api/2023-10/products.json"
+    url = f"{os.getenv('SHOPIFY_STORE_URL')}/admin/api/2025-04/products.json"
     headers = {
         "X-Shopify-Access-Token": os.getenv("SHOPIFY_ACCESS_TOKEN"),
         "Content-Type": "application/json"
