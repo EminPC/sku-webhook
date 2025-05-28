@@ -1,0 +1,12 @@
+{
+    "prefix": "PC",
+    "start_number": 1792,
+    "fields": [
+      {"source": "product_type", "mode": "first_char"},
+      {"source": "title", "mode": "first_char"},
+      {"source": "vendor", "mode": "first_char"}
+    ],
+    "separator": "-",
+    "apply_to": "missing_sku_only",
+    "suffix": ""
+  }
