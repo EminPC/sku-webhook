@@ -1,7 +1,9 @@
 # server.py
 from flask import Flask, request, jsonify
 from utils import generate_sku, update_sku
-from sku_config import config
+import json
+with open("sku_config.json") as f:
+    config = json.load(f)
 
 app = Flask(__name__)
 
