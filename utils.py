@@ -12,7 +12,7 @@ def get_shopify_products():
     return res.json()["products"]
 
 def update_sku(product_id, variant_id, new_sku):
-    url = f"{os.getenv('SHOPIFY_STORE_URL')}/admin/api/2023-10/variants/{variant_id}.json"
+    url = f"{os.getenv('SHOPIFY_STORE_URL')}/admin/api/2025-04/variants/{variant_id}.json"
     headers = {
         "X-Shopify-Access-Token": os.getenv("SHOPIFY_ACCESS_TOKEN"),
         "Content-Type": "application/json"
